@@ -1,0 +1,245 @@
+/*    Made by:
+    	
+ 	 \(▔＾▔)/
+
+ 	 Amiko Tong*/
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#noscroll {
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 8px;
+    /*    background-color: #93D692;*/
+    background: linear-gradient(90deg, rgba(121, 245, 119, 1) 0%, rgba(0, 87, 255, 1) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: progress 1s linear;
+    z-index: 10;
+}
+
+@keyframes progress {
+    to {
+        /*        background-color: #0057FF;*/
+        width: 100%;
+    }
+}
+
+:root * {
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.p_logo_text {
+    font-size: 1.4vw;
+    font-weight: bold;
+    opacity: 0.5;
+    position: fixed;
+}
+
+.value_name {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 8vw;
+    line-height: 150%;
+    font-size: 1.4vw;
+    /*    position: fixed; */
+}
+
+.intro_con {
+    width: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    width: auto;
+    flex: 1;
+    /*        background-color: aqua; */
+    display: flex;
+
+}
+
+.intro_text {
+    width: 60vw;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 2.8vw;
+    /*    background-color: azure;*/
+}
+
+.info {
+    width: auto;
+    height: auto;
+    margin: auto 8vw;
+    margin-bottom: 5vw;
+
+    display: flex;
+    flex-direction: row;
+
+    border-top: #eaeaea solid 1px;
+    padding-top: 2vw;
+    grid-gap: 2vw;
+
+
+}
+
+.info_info {
+    flex: 1;
+
+}
+
+.present_con {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.they {
+    width: 48%;
+    height: auto;
+    margin-left: 8vw;
+    margin-right: 8.4vw;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5.7vw;
+}
+
+.they_con {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.3vw;
+}
+
+.they_title {
+    width: auto;
+    height: auto;
+    /*    margin-bottom: 1.3vw; */
+    font-size: 1.4vw;
+    color: #404040;
+}
+
+.they_para {
+    width: auto;
+    height: auto;
+    line-height: 150%;
+    font-size: 1.6vw;
+
+}
+
+.they_challenge {
+    width: auto;
+    height: auto;
+    line-height: 150%;
+    color: black;
+    font-size: 1.4vw;
+    margin: auto 8vw;
+}
+
+.me {
+    flex: 1;
+    height: auto;
+    margin-right: 8vw;
+    margin-top: 2.7vw;
+
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2.85vw;
+}
+
+.me_text {
+    color: #888888;
+    font-style: italic;
+    line-height: 150%;
+    /*    font-size: 1.2vw;*/
+}
+
+.feedback {
+    width: 40vw;
+    height: auto;
+    /*    background-color: beige;*/
+    margin: auto;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    margin-bottom: 4vw;
+    border-bottom: #eaeaea solid 1px;
+    /*    background-color: beige;*/
+}
+
+.present {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.next {
+    width: auto;
+    height: auto;
+    margin: 8vw 0;
+    display: flex;
+}
+
+.next_text {
+    margin: auto auto;
+    font-family: Font02;
+    font-size: 2.8vw;
+    color: black;
+}
+
+.next_text:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease-in;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.tzez_con {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 2vw;
+    margin: 5vw 0;
+}
+
+.tz_con {
+    width: 22%;
+}
+
+.ez_con {
+    flex: 1;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 599px) {
+    .present {
+
+        margin-top: 48px;
+    }
+}
