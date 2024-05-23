@@ -131,3 +131,20 @@ function copyToClipboard(e1, e2) {
     document.execCommand("copy");
     $temp.remove();
 }
+
+/////////////////////////////////////////////////////////
+
+//const controller = new ScrollMagic.Controller();
+//
+//const scene = new ScrollMagic.Scene({
+//        triggerElement: "#trigger",
+//        duration: 600,
+//        triggerHook: 0.05
+//    })
+//    .setPin("#pin")
+//    .addIndicators()
+//    .addTo(controller);
+//
+
+/////////////////////////////////////////////////////////
+

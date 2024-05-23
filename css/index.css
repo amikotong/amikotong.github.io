@@ -19,7 +19,7 @@ body {
     height: auto;
     margin: 0;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     color: black;
     background-color: #c4c4c4;
     background-color: white;
@@ -34,6 +34,16 @@ img {
     height: auto;
 }
 
+/*
+img_con{
+    margin: 0;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+
+}
+*/
+
 .font {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
@@ -46,6 +56,17 @@ img {
     font-style: oblique;
 }
 
+.light {
+    opacity: 0.6;
+}
+
+.highlight {
+    color: black;
+    opacity: 1;
+    background-color: rgba(121, 245, 119, 0.2);
+
+}
+
 
 .logo {
     position: absolute;
@@ -55,7 +76,7 @@ img {
 }
 
 .logo_text {
-    font-size: 2.2vw;
+    font-size: 1.4vw;
     font-weight: bold;
 }
 
@@ -73,16 +94,15 @@ img {
     transition: all 0.2s ease-in;
 }
 
-
-
 section {
     margin: 0;
-    padding: 2vw;
-
+    padding: 1vw 2vw;
     display: flex;
     flex-direction: column;
     /*    background-color: brown;*/
 }
+
+
 
 .one {
     width: auto;
@@ -118,7 +138,7 @@ section {
     width: auto;
     height: auto;
     margin: 0 auto;
-    margin-left: 11vw;
+    margin-left: 8vw;
     line-height: 150%;
 }
 
@@ -129,8 +149,8 @@ section {
     color: #BEBEBE;
     text-shadow: 2px 0px 5px rgba(255, 255, 255, 0.16),
         -4px 0px 7px rgba(255, 255, 255, 0.56);
-    
-/*
+
+    /*
       text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
     0px -4px 10px rgba(255,255,255,0.3);
 */
@@ -162,19 +182,19 @@ section {
     color: black;
 }
 
-#chat {
+.button{
     width: auto;
     height: auto;
     padding: 0.4vw 0.6vw;
     border-radius: 2vw;
-    background-color: rgb(255,255,255,0.2);
+    background-color: rgb(255, 255, 255, 0.2);
     color: black;
     box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
     font-family: Font02;
 
 }
 
-#chat:hover {
+.button:hover {
     border-radius: 50%;
 }
 
@@ -192,7 +212,7 @@ section {
     height: auto;
     padding: 0.4vw 0.6vw;
     border-radius: 2vw;
-    background-color: rgb(255,255,255,0.2);
+    background-color: rgb(255, 255, 255, 0.2);
     color: black;
     box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
     font-family: Font02;
@@ -220,30 +240,20 @@ section {
     bottom: 0;
     right: 0;
     border-radius: 1vw;
-
-
-
     padding: 4vw 3vw;
     width: 26vw;
     height: auto;
-
     overflow: auto;
     box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-
+    background-image: linear-gradient(to top, rgba(0,87,255,1) 0%, rgba(121,245,119,1) 100%);
     text-align: center;
     font-size: 1.4vw;
     line-height: 150%;
-
 }
-
-
 
 .show {
     display: block;
 }
-
-
 
 .two {
     width: auto;
@@ -298,6 +308,8 @@ section {
 .p_img {
     border-radius: 1vw;
     /*    object-fit: cover;*/
+    background-color: black; 
+/*    background-color:#273526;  */
 }
 
 .p_text {
@@ -323,10 +335,11 @@ section {
 }
 
 .p_type {
-    background-color: gray;
+    /*    background-color: gray;*/
     padding: 0.4vw 0.6vw;
+    border: 1px white solid;
     border-radius: 2vw;
-    font-family: Font03;
+    font-family: Font02;
     color: white;
 }
 
@@ -380,6 +393,8 @@ footer {
     margin: auto 0;
     /*    background-color: beige; */
 }
+
+
 
 /*above is footer data*/
 
