@@ -34,16 +34,6 @@ img {
     height: auto;
 }
 
-/*
-img_con{
-    margin: 0;
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
-
-}
-*/
-
 .font {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
@@ -96,7 +86,7 @@ img_con{
 
 section {
     margin: 0;
-    padding: 1vw 2vw;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     /*    background-color: brown;*/
