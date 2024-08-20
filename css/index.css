@@ -18,11 +18,13 @@ body {
     width: auto;
     height: auto;
     margin: 0;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.2vw;
     color: black;
-    background-color: #c4c4c4;
+    /*
     background-color: white;
+    background-color: #0f0f0f;
+*/
 }
 
 a {
@@ -35,11 +37,11 @@ img {
 }
 
 .font {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .bold {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .italic {
@@ -47,7 +49,9 @@ img {
 }
 
 .light {
-    opacity: 0.6;
+    /*    opacity: 0.6;*/
+
+    font-weight: 300;
 }
 
 .highlight {
@@ -59,10 +63,16 @@ img {
 
 
 .logo {
-    position: absolute;
+    position: fixed;
     left: 2%;
     margin-top: 2vw;
     color: black;
+}
+
+
+.logo:hover {
+    opacity: 0.7;
+    transition: all 0.2s ease-in;
 }
 
 .logo_text {
@@ -70,19 +80,25 @@ img {
     font-weight: bold;
 }
 
-.cold:hover {
-    display: none;
-    transition: all 0.2s ease-in;
+.nav_con {
+    position: fixed;
+    right: 2%;
+    margin-top: 2vw;
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
 }
 
-.cute {
-    display: none;
+.nav_text {
+    margin: auto 0;
+    font-family: Font02;
+    color: black;
+    font-size: 1.1vw;
 }
 
-.cold:hover + .cute {
-    display: block;
-    transition: all 0.2s ease-in;
-}
 
 section {
     margin: 0;
@@ -96,9 +112,11 @@ section {
 
 .one {
     width: auto;
-    height: 84vh;
+    /*    height: 84vh;*/
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(180deg, hsla(245, 86%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .one_top {
@@ -111,19 +129,38 @@ section {
 
 .one_middle {
     width: auto;
-    flex: 1;
+    height: auto;
+    line-height: normal;
+    /*    flex: 1;*/
     display: flex;
+    font-size: 5vw;
+    /*    background-color: white;*/
+    margin: 0 8vw;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
 }
 
 .one_bottom {
     width: auto;
-    height: auto;
+    height: 80px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    /*    background-color: white;*/
+    margin: 0 8vw;
+}
+
+.dec_text {
+    font-size: 1.1vw;
+}
+
+.arrow {
+    margin: auto;
+    font-size: 2vw;
+    font-weight: 300;
 }
 
 
+/*
 .value {
     width: auto;
     height: auto;
@@ -131,48 +168,10 @@ section {
     margin-left: 8vw;
     line-height: 150%;
 }
-
-.name_display {
-    margin: auto auto;
-    font-size: 23vw;
-    font-family: Font01;
-    color: #BEBEBE;
-    text-shadow: 2px 0px 5px rgba(255, 255, 255, 0.16),
-        -4px 0px 7px rgba(255, 255, 255, 0.56);
-
-    /*
-      text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-    0px -4px 10px rgba(255,255,255,0.3);
 */
 
 
-}
-
-
-.noname {
-    width: auto;
-    height: auto;
-    margin: auto 0;
-}
-
-.nav_con {
-    width: auto;
-    height: auto;
-
-    display: flex;
-    flex-direction: row;
-    column-gap: 3vw;
-    position: absolute;
-    right: 2%;
-}
-
-.nav_text {
-    margin: auto 0;
-    font-family: Font02;
-    color: black;
-}
-
-.button{
+.button {
     width: auto;
     height: auto;
     padding: 0.4vw 0.6vw;
@@ -181,6 +180,7 @@ section {
     color: black;
     box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
     font-family: Font02;
+    font-size: 1vw;
 
 }
 
@@ -196,51 +196,6 @@ section {
 }
 
 
-
-.dropbtn {
-    width: auto;
-    height: auto;
-    padding: 0.4vw 0.6vw;
-    border-radius: 2vw;
-    background-color: rgb(255, 255, 255, 0.2);
-    color: black;
-    box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
-    font-family: Font02;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-}
-
-.dropbtn:hover {
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    /*    margin: auto auto; */
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-radius: 1vw;
-    padding: 4vw 3vw;
-    width: 26vw;
-    height: auto;
-    overflow: auto;
-    box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
-    background-image: linear-gradient(to top, rgba(0,87,255,1) 0%, rgba(121,245,119,1) 100%);
-    text-align: center;
-    font-size: 1.4vw;
-    line-height: 150%;
-}
-
 .show {
     display: block;
 }
@@ -248,9 +203,9 @@ section {
 .two {
     width: auto;
     height: auto;
-    background: #0f0f0f;
-    /*    padding-bottom: 10%;*/
-    /*    border-radius: 4vw 4vw 0 0;*/
+    background-color: black;
+    background-color: #0f0f0f;
+    /*    margin: 0 8vw; */
 }
 
 
@@ -259,8 +214,8 @@ section {
     height: auto;
     display: flex;
     flex-direction: column;
-    margin: 8% 0;
-    /*        background-color: beige; */
+    /*    margin: 8% 0;*/
+    margin: 8% 8vw;
 
 }
 
@@ -271,6 +226,7 @@ section {
     flex-direction: row;
     column-gap: 2vw;
     margin-top: 4vh;
+
 
 
 }
@@ -298,8 +254,8 @@ section {
 .p_img {
     border-radius: 1vw;
     /*    object-fit: cover;*/
-    background-color: black; 
-/*    background-color:#273526;  */
+    /*    background-color: black;*/
+
 }
 
 .p_text {
@@ -320,6 +276,7 @@ section {
 
 .p_date {
     margin: auto 0;
+    color: black;
     color: white;
     opacity: 0.8;
 }
@@ -330,6 +287,7 @@ section {
     border: 1px white solid;
     border-radius: 2vw;
     font-family: Font02;
+    color: black;
     color: white;
 }
 
@@ -338,6 +296,7 @@ section {
     height: auto;
     font-size: 3vw;
     /*    margin: 2vw 0;*/
+    color: black;
     color: white;
 }
 

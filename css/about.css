@@ -1,0 +1,55 @@
+.bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    background: linear-gradient(180deg, hsla(245, 86%, 92%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+
+}
+
+.abt_con {
+
+    width: auto;
+    height: auto;
+
+    /*    height:38vh;*/
+    /*    margin: auto 8vw;*/
+    /*    border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vh;
+
+}
+
+
+.abt_headline {
+    width: 44vw;
+    height: auto;
+    margin: auto auto;
+    font-size: 2.8vw;
+    text-align: center;
+    /*    background-color: white; */
+    margin-top: 20vh;
+    margin-bottom: 8vh;
+}
+
+.abt_body {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 2vw;
+    margin: auto 8vw;
+    line-height: 130%;
+
+}
+
+.abt_body_sec {
+    flex: 1;
+    height: auto;
+
+}
